@@ -28,7 +28,9 @@
 - from rest_framework.permissions import IsAuthenticated
 - at the top af the view class add this line:
   - class className(APIView):
+  - 
       permission_class = ( IsAuthenticated, ) or [ IsAuthenticated, ]
+      
 - 2- enter these commands on terminal:
   - python manage.py migrate
   - python manage.py flush
@@ -36,9 +38,11 @@
 - 3- add it in INSTALLED_APP -> [..., 'rest_framework.authtoken', ]
 - 4- add REST_FRAMEWORK = {} dictionary in settings.py file.
     - REST_FRAMEWORK = { 
+     
         'DEFAULT_AUTHENTICATION_CLASSES': [
             'rest_framework.authentication.TokenAuthentication'
          ] 
+         
      } 
 - 5- with this command you can make token for a user:
     - python manage.py drf_create_token username
