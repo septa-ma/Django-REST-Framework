@@ -35,13 +35,13 @@
   - python manage.py createsuperuser
 - 3- add it in INSTALLED_APP -> [..., 'rest_framework.authtoken', ]
 - 4- add REST_FRAMEWORK = {} dictionary in settings.py file.
-    REST_FRAMEWORK = { 
+    - REST_FRAMEWORK = { 
         'DEFAULT_AUTHENTICATION_CLASSES': [
             'rest_framework.authentication.TokenAuthentication'
          ] 
      } 
 - 5- with this command you can make token for a user:
-    python manage.py drf_create_token username
+    - python manage.py drf_create_token username
 - 6- add these route in urls.py make token accable for client:
-    from rest_framework.authtoken.views import obtain_auth_token
-    path('token/', obtain_auth_token, name='obtain_token')
+   -  from rest_framework.authtoken.views import obtain_auth_token
+    - path('token/', obtain_auth_token, name='obtain_token')
