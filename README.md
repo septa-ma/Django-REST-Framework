@@ -28,7 +28,7 @@
 - from rest_framework.permissions import IsAuthenticated
 - at the top af the view class add this line:
   - class className(APIView):
-  - 
+  
       permission_class = ( IsAuthenticated, ) or [ IsAuthenticated, ]
       
 - 2- enter these commands on terminal:
