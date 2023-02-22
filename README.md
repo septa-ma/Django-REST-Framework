@@ -39,9 +39,9 @@
 - 4- add REST_FRAMEWORK = {} dictionary in settings.py file.
     - REST_FRAMEWORK = { 
      
-        'DEFAULT_AUTHENTICATION_CLASSES': [
-            'rest_framework.authentication.TokenAuthentication'
-         ] 
+          'DEFAULT_AUTHENTICATION_CLASSES': [
+              'rest_framework.authentication.TokenAuthentication'
+           ] 
          
      } 
 - 5- with this command you can make token for a user:
