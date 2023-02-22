@@ -46,6 +46,6 @@
      } 
 - 5- with this command you can make token for a user:
     - python manage.py drf_create_token username
-- 6- add these route in urls.py make token accable for client:
+- 6- add this route in urls.py to make token accssable for client:
    -  from rest_framework.authtoken.views import obtain_auth_token
     - path('token/', obtain_auth_token, name='obtain_token')
